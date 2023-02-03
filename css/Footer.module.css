@@ -1,0 +1,121 @@
+.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.topItems {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.topBoxesMsk {
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.topBoxesCoporate {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.topBoxesServices {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.topBoxesContact {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.title {
+    font-size: 1.2vw;
+    font-weight: bolder;
+    list-style: none;
+}
+
+.text {
+    font-size: 1.2vw;
+}
+
+.msk {
+    font-size: 3vw;
+}
+
+.subtitle {
+    font-size: 1.5vw;
+}
+
+.linkImage {
+    height: 3vw;
+    width: 3vw;
+    margin: 1vw;
+}
+
+.social {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.creator {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2vw;
+}
+
+@media screen and (max-width:600px) {
+
+    .topBoxesMsk {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .msk {
+        font-size: 12vw;
+        padding: 0;
+        margin: 0;
+        margin-top: 1vh;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+    .topItems {
+        flex-direction: column;
+    }
+
+    .title,
+    .text {
+        font-size: 4.5vw;
+    }
+
+    .linkImage {
+        height: 13vw;
+        width: 13vw;
+        margin: 2vw;
+    }
+
+    .creator {
+        font-size: 3.5vw;
+    }
+}

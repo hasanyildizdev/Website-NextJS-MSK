@@ -1,0 +1,62 @@
+.container{
+    height: calc(100vh);
+    overflow: hidden;
+    position: relative;
+    align-self:flex-start;
+}
+
+.arrowContainer{
+    position: absolute;
+    width: 5%;
+    height: 10%;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.arrowContainer:hover{
+    height: 15%;
+}
+
+.titleDiv{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #00000070;
+    z-index: 50;
+}
+
+.title{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFFFF;
+    font-size: 4.5vw;
+    text-align: center;
+}
+
+.wrapper{
+    width: 700vw;
+    height: 100%;
+    display: flex;
+    transition: all 1.5s ease-in-out;
+}
+
+.imgContainer{
+    width: 100vw;
+    height: 100%;
+    position: relative;
+}
+
+@media screen and (max-width:480px) {
+    .container{
+        height: 65vh;
+    }
+}

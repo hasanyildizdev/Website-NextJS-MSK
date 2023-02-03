@@ -1,0 +1,249 @@
+.container{
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.items{
+    flex: 1;
+    flex-direction: column;
+}
+
+.items:first-child{
+  flex: 1;
+  height: calc(100vh);
+}
+
+.items:nth-child(2){
+    flex: 1;
+    height: calc(40vw);
+}
+
+.items:last-child{
+    flex: 1;
+    height: calc(40vw);
+}
+
+.aboutDiv{
+  height: calc(100vh);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backgroundDiv{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.textDiv{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: calc(50vw);
+    height: auto;
+    left: -0.3vw;
+    z-index: 2;
+    padding: 3vw;
+    font-weight: bold;
+    border: 0.3vw solid;
+    animation: MoveLeftToRight 1.5s linear;
+}
+
+.h1Title{
+  font-size: 2vw;
+}
+
+.h1Text{
+  font-size: 1.6vw;
+}
+
+@keyframes MoveLeftToRight {
+    0% {
+        left: -1000px;
+    }
+    100% {
+        left: -0.3vw;
+    }
+  }
+
+  .servicesFrame{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+  }
+
+  .serviceCard{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .serviceCard:first-child{
+    flex: 1;
+    width: calc(15vw);
+    height: calc(35vw);
+    margin:0 6vw;
+    border: 0.3vw solid;
+    border-radius: 5%;
+  }
+
+  .serviceCard:nth-child(2){
+    flex: 1;
+    width: calc(15vw);
+    height: calc(35vw);
+    margin:0;
+    border: 0.3vw solid;
+    border-radius: 5%;
+  }
+
+  .serviceCard:last-child{
+    flex: 1;
+    width: calc(15vw);
+    height: calc(35vw);
+    margin:0 6vw;
+    border: 0.3vw solid;
+    border-radius: 5%;
+  }
+
+  .cardImage{
+    height: 10vw;
+    width: 10vw;
+  }
+
+  .cardSections{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8vw;
+  }
+
+  .cardSectionsTitle{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2vw;
+  }
+
+  .cardSections:first-child{
+    flex: 1;
+  }
+
+  .cardSections:nth-child(2){
+    flex: 1;
+  }
+
+  .cardSections:last-child{
+    flex: 2;
+  }
+
+  @media screen and (max-width:600px){
+
+    .items:first-child{
+      flex: 1;
+      height: calc(50vh);
+    }
+
+    .textDiv{
+      width: calc(90vw);
+      margin-bottom: 40vh;
+      animation: MoveLeftToRight 1s linear;
+    }
+
+    .backgroundDiv{
+      display: none;
+    }
+
+    .h1Title{
+      font-size: 4vw;
+      margin: 0;
+    }
+    
+    .h1Text{
+      font-size: 4vw;
+      margin: 0;
+    }
+
+    .items:nth-child(2){
+      flex: 1;
+      height: auto;
+    }
+  
+    .items:last-child{
+        flex: 1;
+        height: auto;
+    }
+
+    .servicesFrame{
+      flex-direction: column;
+    }
+
+    .serviceCard:first-child{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(80vw);
+      height: auto;
+      margin: 0;
+      margin-bottom:5vw;
+      border: 0.3vw solid;
+      border-radius: 5%;
+    }
+  
+    .serviceCard:nth-child(2){
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(80vw);
+      height: auto;
+      margin: 0;
+      margin-bottom:5vw;
+      border: 0.3vw solid;
+      border-radius: 5%;
+    }
+  
+    .serviceCard:last-child{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(80vw);
+      height: auto;
+      margin: 0;
+      margin-bottom:5vw;
+      border: 0.3vw solid;
+      border-radius: 5%;
+    }
+
+    .cardImage{
+      height: 30vw;
+      width: 30vw;
+    }
+
+    .cardSectionsTitle{
+      font-size: 4vw;
+      white-space: nowrap;
+    }
+
+    .cardSections{
+      font-size: 2.6vw;
+      margin-bottom: 10vw;
+    }
+  }

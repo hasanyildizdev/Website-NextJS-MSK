@@ -1,0 +1,311 @@
+.container{
+    flex: 1;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.intro{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: calc(100vh);
+}
+
+.h1Titles{
+    font-size: 3vw;
+}
+
+.textDiv{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: calc(50vw);
+    height: auto;
+    padding: 4vw;
+    left: -0.3vw;
+    z-index: 2;
+    border: 0.3vw solid;
+    animation: MoveLeftToRight 1.5s linear;
+    text-align: center;
+}
+
+@keyframes MoveLeftToRight {
+    0% {
+        left: -1000px;
+    }
+    100% {
+        left: -0.3vw;
+    }
+  }
+
+.map{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contactCarts{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 2vw;
+}
+
+.frameTitles{
+    font-size: 2.6vw;
+}
+
+.inputTexts{
+    font-size: 1.5vw;
+    padding: 0.5vw;
+}
+
+.inputTextArea{
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    height: 8vw;
+    margin-bottom: 3vh;
+}
+
+.items{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items:first-child{
+    flex: 1;
+    height:auto;
+    padding: 1vw 0;
+    background-color: black;
+}
+
+.items:nth-child(2){
+    flex: 5;
+    margin:0 2vw;
+    height: 42vw;
+}
+
+.items:last-child{
+    flex: 5;
+    height: 42vw;
+}
+
+
+.contactInfosFrame{
+    height: 40vw;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0.5vw 2vw;
+    flex-direction: column;
+    color: white;
+}
+
+.mailUsFrame{
+    flex: 1;
+    height: 40vw;
+}
+
+
+.mailUsInputs{
+    height: 70%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5vw 2vw;
+}
+
+.mailUsInputs input{
+	width: 100%;
+	margin-bottom: 1vw;
+	outline: none;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+    background-color: white;
+}
+
+.mailUsInputs textarea{
+	width: 100%;
+	outline: none;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+    background-color: white;
+}
+
+.divButton{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5vw;
+}
+
+.info{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 1vw;
+}
+
+.contactImages{
+    height: 3.5vw;
+    width: 3.5vw;
+    margin: 1vw;
+}
+
+.contactTextTitles{
+    color: #23FF00;
+    font-size: 2vw;
+    margin-right: 1vw;
+}
+
+.contactTexts{
+    flex: 1;
+    display: flex;
+    align-content: center;
+    font-size: 1.6vw;
+    font-weight: bold;
+    margin-left: 1vw;
+}
+
+.socialMediaLinks{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.linkImage{
+    margin: 1vw;
+    height: 5vw;
+    width: auto;
+    cursor: pointer;
+}
+
+.sendingDiv{
+    font-size: 2vw;
+}
+
+@media screen and (max-width:600px){
+
+    .container{
+        height: auto;
+    }
+
+    .backgroundDiv{
+        display: none;
+    }
+
+    .textDiv{
+        width: calc(80vw);
+        animation: MoveLeftToRight 1s linear;
+    }
+    
+    .h1Titles{
+        margin: 0;
+        font-size: 5vw;
+    }
+
+    .inputTexts{
+        font-size: 4vw;
+        padding: 1vw;
+        margin-bottom: 2vw;
+    }    
+
+    .inputTextArea{
+        font-size: 4vw;
+        padding: 1vw;
+        margin-bottom: 2vw;
+        height: 20vh;
+    }  
+
+    .contactCarts{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .items{
+        margin:5vh 0;
+    }
+
+    .frameTitles{
+        font-size: 5vw;
+    }
+
+    .socialMediaLinks{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: calc(90vw);
+    }
+
+    .linkImage{
+        margin: 1vw;
+        height: 15vw;
+        width: auto;
+    }
+    
+
+    .items:nth-child(2){
+        flex: 5;
+        margin:10vh 0;
+        width: calc(90vw);
+    }
+    
+    .items:last-child{
+        flex: 5;
+        margin:10vh 0;
+        width: calc(90vw);
+    }
+
+    .mailUsFrame{
+        padding: 1vh;
+        height: auto;
+    }
+
+    .contactInfosFrame{
+        padding: 1vh 2vw;
+        height: auto;
+    }
+
+    .contactTextTitles{
+        font-size: 4vw;
+    }
+
+    .contactImages{
+        height: 10vw;
+        width: 10vw;
+        margin: 2vw;
+    }
+    
+    .contactTexts{
+        font-size: 4vw;
+    }
+
+    .sendingDiv{
+        font-size: 4vw;
+    }
+}
+
+
+
+

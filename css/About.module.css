@@ -1,0 +1,162 @@
+.container{
+    height: calc(200vh);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro{
+    height: calc(100vh);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.aboutDiv{
+    height: calc(100vh);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.backgroundDiv{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.title{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: '50vw';
+    opacity: 0;
+    animation: hideObject 1s linear;
+    text-align: center;
+}
+
+@keyframes hideObject {
+    0%    { opacity: 1;}
+    100%  { opacity: 0; }
+}
+
+
+.textDiv{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: calc(42vw);
+    height: auto;
+    padding: 2vw;
+    left: -0.3vw;
+    z-index: 2;
+    font-weight: bold;
+    border: 0.3vw solid;
+    animation: MoveLeftToRight 1.5s linear;
+    text-align: center;
+}
+
+.textDivTitles1{
+    font-size: 2.5vw;
+}
+
+.textDivTitles2{
+    font-size: 2vw;
+}
+
+.textDivTitles3{
+    font-size: 1.2vw;
+}
+
+@keyframes MoveLeftToRight {
+    0% {
+        left: -1000px;
+    }
+    100% {
+        left: -0.3vw;
+    }
+  }
+
+  .textDiv2{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    padding: 2vw;
+    position: absolute;
+    width: calc(55vw);
+    height: auto;
+    left: -0.3vw;
+    z-index: 2;
+    font-weight: bold;
+    border: 0.3vw solid;
+  }
+
+
+.handImageDiv{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    right: 0;
+    margin-top: 50px;
+    animation: MoveRightToLeft 1.5s linear;
+}
+
+
+@keyframes MoveRightToLeft {
+    0% {
+      right: -1000px;
+    }
+    100% {
+        right: 0;
+    }
+  }
+
+@media screen and (max-width:600px) {
+
+    .backgroundDiv{
+        display: none;
+    }
+
+    .handImageDiv{
+        margin-top: 40vh;
+    }
+    .textDiv{
+        margin-bottom: 40vh;
+        width: calc(90vw);
+        animation: MoveLeftToRight 2s linear;  
+    }
+
+    .textDiv2{
+        width: calc(99vw);
+    }
+
+    .textDivTitles1{
+        font-size: 5vw;
+        margin: 0;
+    }
+    
+    .textDivTitles2{
+        font-size: 4vw;
+    }
+
+    .textDivTitles3{
+        font-size: 3.3vw;
+    }
+}
